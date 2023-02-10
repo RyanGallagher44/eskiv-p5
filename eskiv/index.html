@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"/>
+  <script src="../p5/p5.min.js"></script>
+  <script src="sketch.js"></script>
+  <script src="extra.js"></script>
+</head>
+<body>
+	<main></main>
+	<div id="meta">
+		<span id="title">
+			New p5.js project
+		</span>by 
+		<span id='author'>
+			Ryan Gallagher
+		</span>
+		<br />
+		<br />
+		<span>
+			Based on Eskiv - see reference video <a target="_blank" href="https://www.youtube.com/watch?v=rtR8y8FXWl0">here</a>
+		</span>
+		<br />
+		<br />
+		<span>
+			The game is simple - here are the rules:
+			<ul>
+				<li>You are the circle and you must collect the rectangle (use IJKL or WASD to move)</li>
+				<br />
+				<li>Each time the rectangle is collected, the following happens: </li>
+				<br />
+				<li style="list-style: none">
+					<ul>
+						<li>Your score increases by 5</li>
+						<li>A new rectangle is spawned</li>
+						<li>An enemy is introduced - touch them, the game is over</li>
+					</ul>
+				</li>
+				<br />
+				<li>Each enemy has a 50/50 chance of bouncing either horizontally or vertically</li>
+				<br />
+				<li>When you reach a game over, press SPACE to play again</li>
+			</ul>
+		</span>
+	</div>
+	<script>document.title = document.querySelector("#title").innerHTML + " by " + document.querySelector("#author").innerHTML;</script>
+</body>
+</html>
